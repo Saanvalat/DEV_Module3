@@ -14,13 +14,8 @@ class SumCalculatorTest {
         sumCalculator = new SumCalculator();
     }
 
-    @AfterEach
-    void tearDown() {
-
-    }
-
     @Test
-    void sumCalculatorShouldBe() {
+    void sumCalculatorShouldBe1() {
 
         // Given
         int n = 1;
@@ -45,7 +40,6 @@ class SumCalculatorTest {
     }
     @Test
     void sumCalculatorShouldBeIllegalArgumentException() {
-
         Assertions.assertThrows(IllegalArgumentException.class,() -> {sumCalculator.sum(0);
         });
     }
